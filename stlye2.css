@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: rgba(60, 100, 177, 0.06);
+    display:flex;
+    padding: 0 10rem;
+
+
+}
+
+.logo{
+    display: flex;
+}
+
+.logotext{
+    position: static;
+    font-size: 24px;
+    height: 32px;
+    width: 5    rem;
+    line-height: 32px;
+    margin: 28px 0;
+    color: #3C64B1;
+    text-shadow: 2px 2px 2px 2px black;
+}
+.navigation{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    height: 1rem;
+    width: 18rem;
+    margin: auto ;
+}
+
+.about{
+    margin-right: 2rem;
+    color: #3C64B1;
+    width: 4rem;
+
+}
+.products{
+    margin-right: 2rem;
+    width: 4rem;
+}
+
+.contact{
+    margin-right: 2rem;
+    width: 4rem;
+}
+
+.help{
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1{
+    display: flex;
+    height: 3rem;
+    border: none;
+    background: rgba(60, 100, 177, 0);
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color:#3C64B1;
+    padding-right: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.button2{
+    display: flex;
+    height: 3rem;
+    border: none;
+    background: rgba(60, 100, 177, 1);
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px black ;
+}
+
+.main1{
+    display: flex;
+    background-color: rgba(60, 100, 177, 0.06);
+    height: 42rem
+}
+
+.video{
+    display: flex;
+    margin: auto 0;
+    margin-left: 10rem;
+    margin-right: 0;
+    width: 40rem;
+    height: 32rem ;
+    background-color:rgba(60, 100, 177, 0.1);
+    border: 1px solid #3C64B1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texts{
+    height: 32rem ;
+    margin: auto 0;
+    margin-left: 3vw;
+    width:35vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1{
+    text-transform: uppercase;
+    color: #3C64B1;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    text-shadow: 1px 1px  #3C64B1;
+}
+
+.text2{
+    position: static;
+    display: block;
+    font-size: 44px;
+    font-weight: 700;
+    color: #373F41;
+    letter-spacing: 0.2px;
+    padding-top: 1rem;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.text3{
+    position: static;
+    display: block;
+    padding-top: 3rem;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+
+}
+
+.button3{
+    border: 1px solid #3C64B1;
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+    background: rgba(60, 100, 177, 0);
+
+}
+
+.main2{
+    display:flex;
+    height: 37.5rem;
+
+}
+
+.texts2{
+    display:block;
+    margin-left: 10rem;
+    height: 22.5rem;
+    width: 37.5vw;
+    margin-top: 10rem;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.text4{   
+    display:block;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.1px;
+    height: 8rem;
+    text-shadow: 1px 1px 1px grey;
+}
+.text5{
+    display: inline-block;
+    width: 17rem;
+    margin-right: 30px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.text6{    
+    display: inline-block;
+    width: 17rem;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+.texts-next-to-each-other{
+    display: block;
+    margin-top: 4rem;
+    width: 45vw;
+}
+
+.picture{
+    width: 33.75rem;
+    height: 27.75rem;
+    background-color:rgba(60, 100, 177, 0.1);
+    margin: auto;
+    margin-right: 10rem;
+    border: 1px solid #3C64B1;
+}
+.gg-image{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}   
+
+.footer{
+    background-color: rgba(60, 100, 177, 0.06);
+    display: inline-block;
+    height: 31rem;
+    width: 100%;
+}
+.footer-header{
+    display: block;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+.big-title{
+    display:block;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.alt-title{
+    margin-top: -1rem;
+
+}
+.left, .middle, .right{
+    display:inline-block;
+    width: fit-content;
+    height: min-content;
+    margin-top: 2rem;
+}
+.left h3, .middle h3, .right h3{
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding:10px;
+}
+.left p, .middle p, .right p{
+    width: 25rem;
+    font-size: 22px;
+    padding:5px;
+}
+.footer-content{
+    display: block;
+    text-align: center;
+}
+
+.main-footer{
+    margin-top: 5rem;
+}
+
+.left{
+    border-right: 2.5px solid rgba(60, 100, 177, 0.25);
+}
+
+.middle{
+    border-right: 2.5px solid rgba(60, 100, 177, 0.25);
+}
+
+.right{
+
+}
+
+.left-discover a, .right-discover a, .middle-discover a{
+    text-decoration: none;
+    color: rgba(60, 100, 177, 1);
+    font-weight: 700;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 3rem;
+}
