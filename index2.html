@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Website</title>
     <link href='https://css.gg/play-button-o.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="stlye2.css">
     <link href='https://css.gg/image.css' rel='stylesheet'>
 </head>
+<!-- kicsit formataltam a documentumot -->
+
 <body>
+    <!-- en azt ami a body tag-ben van beletennem egy wrapper div-be es ugy allitanam be az oldal kozepere a tartalmat -->
     <header>
         <div class="logo">
             <h1 class="logotext">LOGO</h1>
         </div>
+        <!-- itt hasznalhatod a nav html tag-et -->
         <div class="navigation">
+            <!-- a nav-ban szereplo linkek pedig a tagek -->
+            <!-- szerintem itt nincs szukseg kulon classokra, mivel egyszeru css szabalyokkal be lehet allityani rajtuk a tavolsagokat -->
             <div class="about">
                 About
             </div>
@@ -37,111 +45,131 @@
                 Sign Up
             </button>
         </div>
-    </header>   
-        <div class="main1">
-            <div class="video">
-                <i class="gg-play-button-o"></i>   
-
-            </div>
-            <div class="texts">
-                <div class="text1">
-                    About Us
-                </div>
-                <div class="text2">
-                    We scratch, build and play together.
-                </div>
-                <div class="text3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolore veniam, sapiente neque vel fugit ab rem illo. Nobis odit quae porro temporibus deleniti voluptatem id corrupti similique vero ipsam?
-
-                </div>
-                <button class="button3">
-                    Contact Us
-                </button>
-            </div>
+    </header>
+    <!-- itt let hasznalni a main/section/article HTML tag-eket -->
+    <!-- az egyertelmuseg jegyeben nem szamozzuk a classokat, hanem sajatos nevekkel latjuk el oket -->
+    <div class="main1">
+        <!-- video-container class-t lehet hasznalni -->
+        <div class="video">
+            <i class="gg-play-button-o"></i>
         </div>
-        
-        <div class="main2">
-            <div class="texts2">
-                <div class="text4">
-                    Fostering creativity and innovationeam definiebas reformidans, exerci persecuti
-                </div>
-                <div class="texts-next-to-each-other">
-                    <div class="text5">
-                        <i class="fas fa-box" style="font-size: 1.5rem; display: flex; padding: 0 0 1.5rem 0;"></i>
-                        Et has minimelitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.
-                    </div>
-                    <div class="text6">
-                        <i class="fa fa-truck " style="font-size: 1.5rem; display: flex; padding: 0 0 1.5rem 0;" ></i>
-                        At nam minimum ponderum. Est audiam animal molestia te. Ex duo eripuit mentitum.
-                    </div>
-                </div>
-               
+        <!-- text-container class esetleg? -->
+        <div class="texts">
+            <!-- ez  itt egy link, ami az about us oldalra kene vigye a felhasznalot -->
+            <div class="text1">
+                About Us
             </div>
-            <div class="picture">
-                <i class="gg-image"></i>
+            <!-- Ez itt egy h1 vagy h2 taget attol fugg melyik resze az oldalnak tartalmazza a fo mondanivalojat az oldalnak -->
+            <div class="text2">
+                We scratch, build and play together.
             </div>
-        </div>
+            <!-- itt lehet hasznosabb egy paragrafus -->
+            <div class="text3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolore veniam, sapiente neque vel fugit ab
+                rem illo. Nobis odit quae porro temporibus deleniti voluptatem id corrupti similique vero ipsam?
 
-        <div class="footer">
-            <div class="main-footer">
-                <div class="footer-header">
-                    <div class="big-title">
-                        <p>Grow your business with better Shipping</p>
-                    </div>
-                    <div class="alt-title">
+            </div>
+            <!-- contact-us class lehet olvashatobba tenne a kodot -->
+            <button class="button3">
+                Contact Us
+            </button>
+        </div>
+    </div>
+    <!-- itt secrttion vagy article tag is megallja a helyet -->
+    <div class="main2">
+        <div class="texts2">
+            <!-- ez is egy h2 tag inkabb -->
+            <div class="text4">
+                Fostering creativity and innovationeam definiebas reformidans, exerci persecuti
+            </div>
+            <div class="texts-next-to-each-other">
+                <div class="text5">
+                    <!-- feleslegesek a style attributumra rapakol tulajdonsagok -->
+                    <i class="fas fa-box" style="font-size: 1.5rem; display: flex; padding: 0 0 1.5rem 0;"></i>
+                    <!-- ez egy kulon pragrafusban jobban nezne ki es konnyebben formazhato is lenne -->
+                    Et has minimelitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.
+                </div>
+                <div class="text6">
+                    <i class="fa fa-truck " style="font-size: 1.5rem; display: flex; padding: 0 0 1.5rem 0;"></i>
+                    At nam minimum ponderum. Est audiam animal molestia te. Ex duo eripuit mentitum.
+                </div>
+            </div>
+
+        </div>
+        <div class="picture">
+            <i class="gg-image"></i>
+        </div>
+    </div>
+
+    <!-- hasznalhatod a footer tag-et -->
+    <div class="footer">
+        <!-- szerintm ez a main-footer classa ellatott div felesleges -->
+        <div class="main-footer">
+            <!-- lehet hasznalni a header html tag-et, lenyegeben barmikor hasznalhatod amikor van egy header-ed -->
+            <div class="footer-header">
+                <!-- hasznalhatsz h2 tag-et -->
+                <div class="big-title">
+                    <p>Grow your business with better Shipping</p>
+                </div>
+                <div class="alt-title">
                     <p>We help world's leading organizations follow their shipping </p>
-                    </div>
-                </div>
-                <div class="footer-content">
-                    <div class="left">
-                        <div class="left-title">
-                            <i class="fas fa-suitcase"></i>
-                            <h2>Shipping communication</h2>
-                        </div>
-
-                        <div class="left-text">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio sequi consectetur!
-                            </p>
-                        </div>
-                        <div class="left-discover">
-                            <a href="">Discover</a>
-                        </div>
-
-                    </div>
-                    <div class="middle">
-                        <div class="middle-title">
-                            <i class="fas fa-users"></i>
-                            <h2>Shipping communication</h2>
-                        </div>  
-
-                        <div class="middle-text">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio sequi consectetur!
-                            </p>
-                        </div>
-
-                        <div class="middle-discover">
-                            <a href="">Discover</a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="right-title">
-                            <i class="fas fa-wrench"></i>
-                            <h2>Logistic performance</h2>
-                        </div>
-                        <div class="right-text">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio sequi consectetur!</p>
-                        </div>
-                        <div class="right-discover">
-                            <a href="">Discover</a>
-                        </div>
-                    </div>
-                    <p class="copyright">
-                        Copyright - Hamza Kristof 2021
-                    </p>
                 </div>
             </div>
+            <!-- ez lehet egy section a footeren belul -->
+            <div class="footer-content">
+                <!-- a left middle right classok feleslegesek, mivel egy egyszeru flex-vel elhelyezed a 3 elemet ha a copyrught szoveget kirakod a containerbol -->
+                <div class="left">
+                    <!-- egyszerubb lenne a div-ek nelkul i/h2/p/a tageket egymas ala bepakolni es nem a div-eket allitgatni -->
+                    <div class="left-title">
+                        <i class="fas fa-suitcase"></i>
+                        <h2>Shipping communication</h2>
+                    </div>
+
+                    <div class="left-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio sequi consectetur!
+                        </p>
+                    </div>
+                    <div class="left-discover">
+                        <a href="">Discover</a>
+                    </div>
+
+                </div>
+                <div class="middle">
+                    <div class="middle-title">
+                        <i class="fas fa-users"></i>
+                        <h2>Shipping communication</h2>
+                    </div>
+
+                    <div class="middle-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio sequi consectetur!
+                        </p>
+                    </div>
+
+                    <div class="middle-discover">
+                        <a href="">Discover</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-title">
+                        <i class="fas fa-wrench"></i>
+                        <h2>Logistic performance</h2>
+                    </div>
+                    <div class="right-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio sequi consectetur!</p>
+                    </div>
+                    <div class="right-discover">
+                        <a href="">Discover</a>
+                    </div>
+                </div>
+                <!-- szerkezeti szempontbol jhobb helye van szerintem a footer-content-en kivul -->
+                <p class="copyright">
+                    Copyright - Hamza Kristof 2021
+                </p>
+            </div>
         </div>
+    </div>
 </body>
+
 </html>

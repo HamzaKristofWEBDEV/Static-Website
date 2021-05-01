@@ -1,300 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* Mulish font hianyzik */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
-
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
-body{
-    padding:0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
+body {
+	/* a paddinget es a margint a *-ra szerencsesebb tenni */
+	/* a body-n beallitanam a megfelelo background colort */
+	padding: 0;
+	margin: 0;
+	/* Mulish font a default */
+	font-family: "Lato", sans-serif;
 }
 
-header{
-    background-color: rgba(60, 100, 177, 0.06);
-    display:flex;
-    padding: 0 10rem;
-
-
+header {
+	background-color: rgba(60, 100, 177, 0.06);
+	display: flex;
+	/* kicsit nagyobb a padding */
+	/* itt kene hasznalni a justify-content es az align-items tulajdonsagokat */
+	padding: 0 10rem;
 }
 
-.logo{
-    display: flex;
+/* minek ide a display:flex? */
+.logo {
+	display: flex;
 }
 
-.logotext{
-    position: static;
-    font-size: 24px;
-    height: 32px;
-    width: 5    rem;
-    line-height: 32px;
-    margin: 28px 0;
-    color: #3C64B1;
-    text-shadow: 2px 2px 2px 2px black;
+.logotext {
+	position: static;
+	font-size: 24px;
+	height: 32px;
+	width: 5 rem;
+	line-height: 32px;
+	margin: 28px 0;
+	color: #3c64b1;
+	text-shadow: 2px 2px 2px 2px black;
 }
-.navigation{
-    display: flex;
-    flex: 2;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    height: 1rem;
-    width: 18rem;
-    margin: auto ;
-}
-
-.about{
-    margin-right: 2rem;
-    color: #3C64B1;
-    width: 4rem;
-
-}
-.products{
-    margin-right: 2rem;
-    width: 4rem;
+.navigation {
+	display: flex;
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	height: 1rem;
+	width: 18rem;
+	margin: auto;
 }
 
-.contact{
-    margin-right: 2rem;
-    width: 4rem;
+.about {
+	margin-right: 2rem;
+	color: #3c64b1;
+	width: 4rem;
+}
+.products {
+	margin-right: 2rem;
+	width: 4rem;
 }
 
-.help{
+.contact {
+	margin-right: 2rem;
+	width: 4rem;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* a help ures */
+.help {
 }
 
-.button1{
-    display: flex;
-    height: 3rem;
-    border: none;
-    background: rgba(60, 100, 177, 0);
-    text-align: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1rem;
-    color:#3C64B1;
-    padding-right: 2rem;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
+/* miert tesszuk oket nagfyon kozepre? */
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.button2{
-    display: flex;
-    height: 3rem;
-    border: none;
-    background: rgba(60, 100, 177, 1);
-    text-align: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1rem;
-    color:white;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    box-shadow: 1px 1px 5px black ;
+/* sok felesleges attribute van a button1 es button2-n pl a display flex */
+.button1 {
+	display: flex;
+	height: 3rem;
+	border: none;
+	background: rgba(60, 100, 177, 0);
+	text-align: center;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #3c64b1;
+	padding-right: 2rem;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5px;
 }
 
-.main1{
-    display: flex;
-    background-color: rgba(60, 100, 177, 0.06);
-    height: 42rem
+.button2 {
+	display: flex;
+	height: 3rem;
+	border: none;
+	background: rgba(60, 100, 177, 1);
+	text-align: center;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 1rem;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	box-shadow: 1px 1px 5px black;
 }
 
-.video{
-    display: flex;
-    margin: auto 0;
-    margin-left: 10rem;
-    margin-right: 0;
-    width: 40rem;
-    height: 32rem ;
-    background-color:rgba(60, 100, 177, 0.1);
-    border: 1px solid #3C64B1;
-    align-items: center;
-    justify-content: center;
-
+/* a headerre allitottal egy padding: 0 10rem;-et ide miert nem? */
+.main1 {
+	display: flex;
+	/* hasznalnak egy align items center-t hogy a video container es a textr container vertikalisan kozepre legyenek helyezve */
+	background-color: rgba(60, 100, 177, 0.06);
+	/* illetve padding top es bottommal allitanam be a html elemek kozti tavolsagokt (header es a kovetkezo main2 kozt) */
+	/* a height felesleges mivel az elemek alakitjak ki a container magassagat */
+	height: 42rem;
 }
 
-.texts{
-    height: 32rem ;
-    margin: auto 0;
-    margin-left: 3vw;
-    width:35vw;
-    align-items: center;
-    justify-content: center;
+.video {
+	/* a video mereteit jo hogy beallitod viszont a szoveget (texts) mar nem kell, o elfoglalja a rendelkezesere allo helyet */
+	display: flex;
+	margin: auto 0;
+	margin-left: 10rem;
+	margin-right: 0;
+	width: 40rem;
+	height: 32rem;
+	background-color: rgba(60, 100, 177, 0.1);
+	border: 1px solid #3c64b1;
+	align-items: center;
+	justify-content: center;
 }
 
-.text1{
-    text-transform: uppercase;
-    color: #3C64B1;
-    font-weight: 900;
-    letter-spacing: 0.4px;
-    text-shadow: 1px 1px  #3C64B1;
+/* az egesz texts rosszul helyezkedik el, nem kozepen hanem a container felso reszeben van */
+.texts {
+	height: 32rem;
+	margin: auto 0;
+	margin-left: 3vw;
+	width: 35vw;
+	align-items: center;
+	justify-content: center;
 }
 
-.text2{
-    position: static;
-    display: block;
-    font-size: 44px;
-    font-weight: 700;
-    color: #373F41;
-    letter-spacing: 0.2px;
-    padding-top: 1rem;
-    text-shadow: 1px 1px 1px grey;
+.text1 {
+	text-transform: uppercase;
+	color: #3c64b1;
+	font-weight: 900;
+	letter-spacing: 0.4px;
+	text-shadow: 1px 1px #3c64b1;
 }
 
-.text3{
-    position: static;
-    display: block;
-    padding-top: 3rem;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.3px;
-
+.text2 {
+	/* a position static az az alapertelmezett erteke a positionnek */
+	position: static;
+	display: block;
+	font-size: 44px;
+	font-weight: 700;
+	color: #373f41;
+	letter-spacing: 0.2px;
+	padding-top: 1rem;
+	text-shadow: 1px 1px 1px grey;
 }
 
-.button3{
-    border: 1px solid #3C64B1;
-    padding: 1rem 2rem;
-    margin-top: 5rem;
-    background: rgba(60, 100, 177, 0);
-
+.text3 {
+	position: static;
+	display: block;
+	padding-top: 3rem;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 0.3px;
 }
 
-.main2{
-    display:flex;
-    height: 37.5rem;
-
+.button3 {
+	border: 1px solid #3c64b1;
+	padding: 1rem 2rem;
+	margin-top: 5rem;
+	background: rgba(60, 100, 177, 0);
 }
 
-.texts2{
-    display:block;
-    margin-left: 10rem;
-    height: 22.5rem;
-    width: 37.5vw;
-    margin-top: 10rem;
-    text-shadow: 1px 1px 1px grey;
+/* itt is hianyzik a padding: 0 10rem; vagyis a helyes ertek, mivel nagyobb ott a tavolsag mint 10 rem */
+.main2 {
+	display: flex;
+	height: 37.5rem;
 }
 
-.text4{   
-    display:block;
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: 0.1px;
-    height: 8rem;
-    text-shadow: 1px 1px 1px grey;
-}
-.text5{
-    display: inline-block;
-    width: 17rem;
-    margin-right: 30px;
-    font-size: 22px;
-    letter-spacing: 0.5px;
+.texts2 {
+	display: block;
+	/* jobb ezeket a szeleket a containeren beallitani es bizzuk az elemekre az elemek kozti elhelyezest */
+	margin-left: 10rem;
+	height: 22.5rem;
+	width: 37.5vw;
+	margin-top: 10rem;
+	text-shadow: 1px 1px 1px grey;
 }
 
-.text6{    
-    display: inline-block;
-    width: 17rem;
-    font-size: 22px;
-    letter-spacing: 0.5px;
+.text4 {
+	display: block;
+	font-weight: 700;
+	font-size: 42px;
+	letter-spacing: 0.1px;
+	height: 8rem;
+	text-shadow: 1px 1px 1px grey;
 }
-.texts-next-to-each-other{
-    display: block;
-    margin-top: 4rem;
-    width: 45vw;
-}
-
-.picture{
-    width: 33.75rem;
-    height: 27.75rem;
-    background-color:rgba(60, 100, 177, 0.1);
-    margin: auto;
-    margin-right: 10rem;
-    border: 1px solid #3C64B1;
-}
-.gg-image{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}   
-
-.footer{
-    background-color: rgba(60, 100, 177, 0.06);
-    display: inline-block;
-    height: 31rem;
-    width: 100%;
-}
-.footer-header{
-    display: block;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 0.5px;
-}
-.big-title{
-    display:block;
-    font-size: 32px;
-    font-weight: 700;
-    text-shadow: 1px 1px 1px grey;
+.text5 {
+	display: inline-block;
+	width: 17rem;
+	margin-right: 30px;
+	font-size: 22px;
+	letter-spacing: 0.5px;
 }
 
-.alt-title{
-    margin-top: -1rem;
-
+.text6 {
+	display: inline-block;
+	width: 17rem;
+	font-size: 22px;
+	letter-spacing: 0.5px;
 }
-.left, .middle, .right{
-    display:inline-block;
-    width: fit-content;
-    height: min-content;
-    margin-top: 2rem;
-}
-.left h3, .middle h3, .right h3{
-    font-size: 28px;
-    letter-spacing: 1px;
-    padding:10px;
-}
-.left p, .middle p, .right p{
-    width: 25rem;
-    font-size: 22px;
-    padding:5px;
-}
-.footer-content{
-    display: block;
-    text-align: center;
+.texts-next-to-each-other {
+	display: block;
+	margin-top: 4rem;
+	width: 45vw;
 }
 
-.main-footer{
-    margin-top: 5rem;
+.picture {
+	width: 33.75rem;
+	height: 27.75rem;
+	background-color: rgba(60, 100, 177, 0.1);
+	margin: auto;
+	margin-right: 10rem;
+	border: 1px solid #3c64b1;
+}
+.gg-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.left{
-    border-right: 2.5px solid rgba(60, 100, 177, 0.25);
+.footer {
+	background-color: rgba(60, 100, 177, 0.06);
+	/* o miert inline block? */
+	display: inline-block;
+	height: 31rem;
+	width: 100%;
+}
+/* a div-ek alapertelmezetten display:block-kal rendelkeznek */
+.footer-header {
+	display: block;
+	text-align: center;
+	align-items: center;
+	letter-spacing: 0.5px;
+}
+.big-title {
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px grey;
 }
 
-.middle{
-    border-right: 2.5px solid rgba(60, 100, 177, 0.25);
+.alt-title {
+	margin-top: -1rem;
+}
+/* ha kicsit valtoztatsz a html strukturan ezek az elem kijelolesek sokkal egyszerubbek is lehetnek */
+.left,
+.middle,
+.right {
+	display: inline-block;
+	width: fit-content;
+	height: min-content;
+	margin-top: 2rem;
+}
+.left h3,
+.middle h3,
+.right h3 {
+	font-size: 28px;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+.left p,
+.middle p,
+.right p {
+	width: 25rem;
+	font-size: 22px;
+	padding: 5px;
+}
+.footer-content {
+	display: block;
+	text-align: center;
 }
 
-.right{
-
+.main-footer {
+	margin-top: 5rem;
 }
 
-.left-discover a, .right-discover a, .middle-discover a{
-    text-decoration: none;
-    color: rgba(60, 100, 177, 1);
-    font-weight: 700;
+.left {
+	border-right: 2.5px solid rgba(60, 100, 177, 0.25);
 }
 
-.copyright{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 3rem;
+.middle {
+	border-right: 2.5px solid rgba(60, 100, 177, 0.25);
+}
+
+.right {
+}
+/* .footer a -val ugyanazt az eredmenyt ered el */
+.left-discover a,
+.right-discover a,
+.middle-discover a {
+	text-decoration: none;
+	color: rgba(60, 100, 177, 1);
+	font-weight: 700;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 3rem;
 }
